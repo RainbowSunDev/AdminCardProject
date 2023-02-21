@@ -1,3 +1,4 @@
+import { ICON_URL } from "../../config/constants";
 import Collapse from "../collapse";
 export const Navbar = () => {
   const inputCss =
@@ -7,27 +8,27 @@ export const Navbar = () => {
       <div>
         <div className="flex">
           <div className="flex items-center cursor-pointer">
-            <img alt="" src="/img/icon/save.svg"></img>
+            <img alt="" src={ICON_URL + "save.svg"}></img>
             <p className="text-themeGrey3 text-[14px] ml-[6px]">Save Search</p>
           </div>
           <div className="flex items-center ml-5 cursor-pointer">
-            <img alt="" src="/img/icon/open.svg"></img>
+            <img alt="" src={ICON_URL + "open.svg"}></img>
             <p className="text-themeGrey3 text-[14px] ml-[6px]">Save Search</p>
           </div>
         </div>
         <div className="mt-7">
-          <form class="flex items-center">
-            <label for="simple-search" class="sr-only">
+          <form className="flex items-center">
+            <label htmlFor="simple-search" className="sr-only">
               Search...
             </label>
-            <div class="relative w-full">
-              <div class="absolute inset-y-0 left-0 flex items-center px-[14px] pointer-events-none">
-                <img alt="" src="/img/icon/search.svg"></img>
+            <div className="relative w-full">
+              <div className="absolute inset-y-0 left-0 flex items-center px-[14px] pointer-events-none">
+                <img alt="" src={ICON_URL + "search.svg"}></img>
               </div>
               <input
                 type="text"
                 id="simple-search"
-                class="bg-white border border-gray-300 text-themeGrey3 text-[14px] focus:outline-none rounded-[20px] block w-full pl-10 py-2"
+                className="bg-white border border-gray-300 text-themeGrey3 text-[14px] focus:outline-none rounded-[20px] block w-full pl-10 py-2"
                 placeholder="Search"
                 required
               />
@@ -36,7 +37,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div className="flex mt-7 cursor-pointer">
-        <img alt="" src="/img/icon/close.svg"></img>
+        <img alt="" src={ICON_URL + "close.svg"}></img>
         <p className="text-themeGrey3 text-[14px] ml-[6px]">Clear</p>
       </div>
 
@@ -52,7 +53,7 @@ export const Navbar = () => {
               <option value="option3">Performance Rating</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-              <img alt="" src="/img/icon/arrowdown.svg"></img>
+              <img alt="" src={ICON_URL + "arrowdown.svg"}></img>
             </div>
           </div>
         </Collapse>
@@ -62,7 +63,7 @@ export const Navbar = () => {
           <textarea
             id="message"
             rows="4"
-            class="block p-3 w-full text-sm text-themeGrey3 bg-[#F9FAFB] border focus:outline-none rounded-lg border-themeGrey1"
+            className="block p-3 w-full text-sm text-themeGrey3 bg-[#F9FAFB] border focus:outline-none rounded-lg border-themeGrey1"
             placeholder="(engineer OR developer) AND software AND NOT designer"
           ></textarea>
         </Collapse>
@@ -82,7 +83,7 @@ export const Navbar = () => {
                 type="button"
                 className="relative -ml-px inline-flex items-center space-x-2 rounded-r-md border border-themeGrey1 focus:outline-none bg-[#F3F4F6] text-sm font-medium text-gray-700 hover:bg-gray-100"
               >
-                <img alt="" src="/img/icon/magic.svg"></img>
+                <img alt="" src={ICON_URL + "magic.svg"}></img>
               </button>
             </div>
           </div>

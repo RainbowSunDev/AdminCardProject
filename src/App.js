@@ -5,6 +5,7 @@ import { Column2 } from "./pages/dashboard/column2";
 import { Column3 } from "./pages/dashboard/column3";
 const App = () => (
   <div className="App">
+    {console.log(process.env)}
     <Layout>
       <Routes>
         <Route path="/*" element={<Column1 />} />
