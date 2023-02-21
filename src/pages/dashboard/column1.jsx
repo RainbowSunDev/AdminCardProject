@@ -27,12 +27,16 @@ export const Item = ({ data }) => {
                 className="border border-themeGrey1 w-4 h-4"
               />
               <h1 className="text-[24px] font-[600] ml-3">{name}</h1>
-              <img src={ICON_URL + "linkedin-alt.svg"} className="ml-2" />
-              <img src={ICON_URL + "github.svg"} className="ml-2" />
-              <img src={ICON_URL + "bxl_upwork.svg"} className="ml-2" />
+              <img
+                alt=""
+                src={ICON_URL + "linkedin-alt.svg"}
+                className="ml-2"
+              />
+              <img alt="" src={ICON_URL + "github.svg"} className="ml-2" />
+              <img alt="" src={ICON_URL + "bxl_upwork.svg"} className="ml-2" />
             </div>
             <div>
-              <img src={ICON_URL + `beacon.svg`} />
+              <img alt="" src={ICON_URL + `beacon.svg`} />
             </div>
           </div>
           <div className="ml-7 mt-[2px]">
@@ -40,8 +44,8 @@ export const Item = ({ data }) => {
             <div className="flex items-center">
               <p className="text-sm text-themeGrey2 font-[400]">{location}</p>
               <div className="w-1 h-1 rounded-full bg-themeGrey4 ml-[6px]"></div>
-              <img src={ICON_URL + "phone.svg"} className="ml-[6px]" />
-              <img src={ICON_URL + "mail.svg"} className="ml-[6px]" />
+              <img alt="" src={ICON_URL + "phone.svg"} className="ml-[6px]" />
+              <img alt="" src={ICON_URL + "mail.svg"} className="ml-[6px]" />
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@ export const Item = ({ data }) => {
       <div className="h-12 flex justify-center pt-3 pb-4">
         <div className="flex items-center">
           <p className="text-themePurple1 text-sm font-[600]">Show more</p>
-          <img src={ICON_URL + `nextArrow.svg`} className="ml-1" />
+          <img alt="" src={ICON_URL + `nextArrow.svg`} className="ml-1" />
         </div>
       </div>
     </div>
@@ -89,7 +93,7 @@ export const Column1 = () => {
       <div className=" bg-[#F5F5F5] p-7 w-full">
         <div className="flex w-full justify-between">
           <div className="flex items-center">
-            <img src={ICON_URL + `people.svg`} />
+            <img alt="" src={ICON_URL + `people.svg`} />
             <h1 className="ml-3 text-[24px] items-center font-[600]">4,000</h1>
             <p className="text-themeGrey2 text-sm ml-[6px] font-[500]">
               Candidates
@@ -109,17 +113,17 @@ export const Column1 = () => {
             <div className="flex bg-white ml-4">
               <button className="flex items-center py-2 px-3 text-sm font-[600] rounded-lg border border-themeGrey1">
                 <span>
-                  <img src={ICON_URL + "export.svg"} className="mr-2" />
+                  <img alt="" src={ICON_URL + "export.svg"} className="mr-2" />
                 </span>
                 Export
               </button>
             </div>
             <div className="flex flex-center bg-themePurple1 py-2 px-3 rounded-lg ml-4">
-              <img src={ICON_URL + "project.svg"} />
+              <img alt="" src={ICON_URL + "project.svg"} />
               <p className="text-white font-[600] text-sm ml-2">
                 Add to Project
               </p>
-              <img src={ICON_URL + "dropdown.svg"} className="ml-2" />
+              <img alt="" src={ICON_URL + "dropdown.svg"} className="ml-2" />
             </div>
           </div>
         </div>
@@ -129,7 +133,11 @@ export const Column1 = () => {
           })}
         </div>
       </div>
-      <img src={IMAGE_URL + "sticky.png"} className="fixed right-7 bottom-7" />
+      <img
+        alt=""
+        src={IMAGE_URL + "sticky.png"}
+        className="fixed right-7 bottom-7"
+      />
     </>
   );
 };

@@ -1,5 +1,4 @@
 import Collapse from "../collapse";
-import { BarsArrowUpIcon, UsersIcon } from "@heroicons/react/20/solid";
 export const Navbar = () => {
   const inputCss =
     "block w-full focus:outline-none rounded-lg border border-themeGrey1 bg-[#F9FAFB] pl-4";
@@ -8,11 +7,11 @@ export const Navbar = () => {
       <div>
         <div className="flex">
           <div className="flex items-center cursor-pointer">
-            <img src="/img/icon/save.svg"></img>
+            <img alt="" src="/img/icon/save.svg"></img>
             <p className="text-themeGrey3 text-[14px] ml-[6px]">Save Search</p>
           </div>
           <div className="flex items-center ml-5 cursor-pointer">
-            <img src="/img/icon/open.svg"></img>
+            <img alt="" src="/img/icon/open.svg"></img>
             <p className="text-themeGrey3 text-[14px] ml-[6px]">Save Search</p>
           </div>
         </div>
@@ -23,7 +22,7 @@ export const Navbar = () => {
             </label>
             <div class="relative w-full">
               <div class="absolute inset-y-0 left-0 flex items-center px-[14px] pointer-events-none">
-                <img src="/img/icon/search.svg"></img>
+                <img alt="" src="/img/icon/search.svg"></img>
               </div>
               <input
                 type="text"
@@ -37,7 +36,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div className="flex mt-7 cursor-pointer">
-        <img src="/img/icon/close.svg"></img>
+        <img alt="" src="/img/icon/close.svg"></img>
         <p className="text-themeGrey3 text-[14px] ml-[6px]">Clear</p>
       </div>
 
@@ -53,7 +52,7 @@ export const Navbar = () => {
               <option value="option3">Performance Rating</option>
             </select>
             <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-              <img src="/img/icon/arrowdown.svg"></img>
+              <img alt="" src="/img/icon/arrowdown.svg"></img>
             </div>
           </div>
         </Collapse>
@@ -83,7 +82,7 @@ export const Navbar = () => {
                 type="button"
                 className="relative -ml-px inline-flex items-center space-x-2 rounded-r-md border border-themeGrey1 focus:outline-none bg-[#F3F4F6] text-sm font-medium text-gray-700 hover:bg-gray-100"
               >
-                <img src="/img/icon/magic.svg"></img>
+                <img alt="" src="/img/icon/magic.svg"></img>
               </button>
             </div>
           </div>
