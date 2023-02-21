@@ -5,8 +5,7 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
-function Icon({ id, open }) {
-  return (
+const Icon = ({ id, open }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={`${
@@ -19,8 +18,7 @@ function Icon({ id, open }) {
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
     </svg>
-  );
-}
+  ); 
 
 const Collapse = ({ header, children }) => {
   const [open, setOpen] = useState(1);
