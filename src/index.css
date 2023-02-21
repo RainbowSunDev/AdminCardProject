@@ -16,39 +16,44 @@ code {
 }
 
 ul.experience li {
-    position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
-    /* use padding-bottom instead of margin-bottom.*/ 
-    margin-bottom: 0; /* This overrides previously specified margin-bottom */
-    color:#191632;
-    font-size: 14px;
-    font-weight: 400;
+  position: relative;
+  /* so that pseudoelements are positioned relatively to their "li"s*/
+  /* use padding-bottom instead of margin-bottom.*/
+  margin-bottom: 0;
+  /* This overrides previously specified margin-bottom */
+  color: #191632;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 ul.experience li:after {
-    /* bullets */
-    content: url('http://localhost:3000/image/icons/dot.svg');
-    position: absolute;
-    left: -20px; /*adjust manually*/
-    top: 0px;
+  /* bullets */
+  content: url('../public/image/icons/dot.svg');
+  position: absolute;
+  left: -20px;
+  /*adjust manually*/
+  top: 0px;
 }
 
 ul.experience li:before {
-    /* lines */
-    content:"";
-    position: absolute;
-    left: -16px; /* adjust manually */
-    border-left: 1px solid #EDEDED;
-    height: 100%;
-    width: 1px;
+  /* lines */
+  content: "";
+  position: absolute;
+  left: -16px;
+  /* adjust manually */
+  border-left: 1px solid #EDEDED;
+  height: 100%;
+  width: 1px;
 }
 
 ul.experience li:first-child:before {
-   /* first li's line */
-   top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+  /* first li's line */
+  top: 6px;
+  /* moves the line down so that it disappears under the bullet. Adjust manually */
 }
 
 ul.experience li:last-child:before {
-    /* last li's line */
-   height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+  /* last li's line */
+  height: 6px;
+  /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
 }
-
